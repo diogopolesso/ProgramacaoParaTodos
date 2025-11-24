@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprenda Python - Guia para Iniciantes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-code"></i>
+                    Aprenda Programação
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Início</a></li>
+                    <li><a href="html.html" class="nav-link">HTML</a></li>
+                    <li><a href="css.html" class="nav-link">CSS</a></li>
+                    <li><a href="javascript.html" class="nav-link">JavaScript</a></li>
+                    <li><a href="python.html" class="nav-link">Python</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="language-page">
+        <div class="container">
+            <div class="language-header">
+                <i class="fab fa-python" style="font-size: 4rem; color: #3776ab; margin-bottom: 1rem;"></i>
+                <h1>Python - Linguagem de Programação</h1>
+                <p>Python é uma linguagem poderosa, simples e perfeita para iniciantes!</p>
+            </div>
+
+            <section class="intro">
+                <h2>O que é Python?</h2>
+                <p>Python é uma linguagem de programação de alto nível, conhecida por sua simplicidade e legibilidade. É como escrever em inglês - muito fácil de entender!</p>
+                
+                <div class="code-example">
+                    <pre># Este é um comentário Python
+print("Olá, mundo!")
+
+# Variáveis são simples
+nome = "João"
+idade = 25
+
+print(f"{nome} tem {idade} anos")</pre>
+                </div>
+            </section>
+
+            <section class="concepts">
+                <h2>Conceitos Fundamentais</h2>
+                <div class="concepts-grid">
+                    <div class="concept-card">
+                        <h3><i class="fas fa-box"></i> Variáveis e Tipos</h3>
+                        <p>Python tem tipagem dinâmica - você não precisa declarar o tipo!</p>
+                        <div class="code-example">
+                            <pre># Variáveis simples
+nome = "Maria"
+idade = 30
+altura = 1.75
+estudante = True
+
+# Listas
+frutas = ["maçã", "banana", "laranja"]
+
+# Dicionários
+pessoa = {"nome": "João", "idade": 25}</pre>
+                        </div>
+                    </div>
+
+                    <div class="concept-card">
+                        <h3><i class="fas fa-code-branch"></i> Condicionais (if/elif/else)</h3>
+                        <p>Python usa indentação para definir blocos de código.</p>
+                        <div class="code-example">
+                            <pre>idade = 18
+
+if idade >= 18:
+    print("Você é maior de idade!")
+elif idade >= 16:
+    print("Você é jovem aprendiz!")
+else:
+    print("Você é menor de idade.")
+
+# Operadores: ==, !=, <, >, <=, >=</pre>
+                        </div>
+                    </div>
+
+                    <div class="concept-card">
+                        <h3><i class="fas fa-redo"></i> Loops (for e while)</h3>
+                        <p>Repetem código várias vezes de forma simples e legível.</p>
+                        <div class="code-example">
+                            <pre># Loop for
+for i in range(5):
+    print(f"Número: {i}")
+
+# Loop while
+contador = 0
+while contador < 3:
+    print(f"Contador: {contador}")
+    contador += 1</pre>
+                        </div>
+                    </div>
+
+                    <div class="concept-card">
+                        <h3><i class="fas fa-cogs"></i> Funções</h3>
+                        <p>Funções em Python são definidas com a palavra-chave def.</p>
+                        <div class="code-example">
+                            <pre># Definindo uma função
+def somar(a, b):
+    return a + b
+
+# Função com parâmetros padrão
+def cumprimentar(nome, saudacao="Olá"):
+    return f"{saudacao}, {nome}!"
+
+# Chamando funções
+resultado = somar(5, 3)
+print(cumprimentar("João"))</pre>
+                        </div>
+                    </div>
+
+                    <div class="concept-card">
+                        <h3><i class="fas fa-list"></i> Listas e Tuplas</h3>
+                        <p>Listas são mutáveis, tuplas são imutáveis.</p>
+                        <div class="code-example">
+                            <pre># Listas (mutáveis)
+frutas = ["maçã", "banana"]
+frutas.append("laranja")
+frutas[0] = "pera"
+
+# Tuplas (imutáveis)
+coordenadas = (10, 20)
+
+# Métodos úteis
+print(len(frutas))  # Tamanho
+print(frutas[1])      # Acesso por índice
+frutas.sort()       # Ordenar</pre>
+                        </div>
+                    </div>
+
+                    <div class="concept-card">
+                        <h3><i class="fas fa-book"></i> Dicionários</h3>
+                        <p>Estruturas de dados que armazenam pares chave-valor.</p>
+                        <div class="code-example">
+                            <pre># Criando dicionário
+pessoa = {
+    "nome": "Ana",
+    "idade": 28,
+    "cidade": "São Paulo"
+}
+
+# Acessando valores
+print(pessoa["nome"])
+print(pessoa.get("idade"))
+
+# Adicionando/modificando
+pessoa["profissão"] = "Engenheira"
+pessoa["idade"] = 29</pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="python-advanced">
+                <h2>Recursos Avançados (mas ainda simples!)</h2>
+                <div class="concepts-grid">
+                    <div class="concept-card">
+                        <h3>List Comprehensions</h3>
+                        <p>Crie listas de forma concisa e elegante.</p>
+                        <div class="code-example">
+                            <pre># Lista de quadrados
+quadrados = [x**2 for x in range(10)]
+
+# Lista com filtro
+pares = [x for x in range(20) if x % 2 == 0]
+
+# Dicionário comprehension
+quadrados_dict = {x: x**2 for x in range(5)}</pre>
+                        </div>
+                    </div>
+                    
+                    <div class="concept-card">
+                        <h3>Módulos e Importações</h3>
+                        <p>Python tem uma biblioteca padrão enorme!</p>
+                        <div class="code-example">
+                            <pre># Módulos padrão
+import math
+import random
+from datetime import datetime
+
+# Usando módulos
+print(math.pi)
+print(random.randint(1, 10))
+print(datetime.now())
+
+# Matemática simples
+raiz = math.sqrt(16)
+print(f"Raiz quadrada de 16: {raiz}")</pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="python-applications">
+                <h2>O que você pode fazer com Python?</h2>
+                <div class="concepts-grid">
+                    <div class="concept-card">
+                        <h3><i class="fas fa-robot"></i> Automação</h3>
+                        <p>Automatize tarefas repetitivas do seu dia a dia.</p>
+                    </div>
+                    
+                    <div class="concept-card">
+                        <h3><i class="fas fa-chart-bar"></i> Análise de Dados</h3>
+                        <p>Analise e visualize dados com bibliotecas como pandas e matplotlib.</p>
+                    </div>
+                    
+                    <div class="concept-card">
+                        <h3><i class="fas fa-globe"></i> Desenvolvimento Web</h3>
+                        <p>Crie aplicações web com frameworks como Django e Flask.</p>
+                    </div>
+                    
+                    <div class="concept-card">
+                        <h3><i class="fas fa-brain"></i> Inteligência Artificial</h3>
+                        <p>Desenvolva projetos de machine learning e IA.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="exercise">
+                <h2>Exercício Prático</h2>
+                <div class="concept-card">
+                    <h3>Crie seu Primeiro Programa Python</h3>
+                    <p>Vamos criar um programa simples de lista de tarefas:</p>
+                    <ol>
+                        <li>Abra o <strong>IDLE do Python</strong> ou qualquer editor de texto</li>
+                        <li>Copie o código abaixo</li>
+                        <li>Salve com o nome <strong>tarefas.py</strong></li>
+                        <li>Execute o programa!</li>
+                    </ol>
+                    <div class="code-example">
+                        <pre># Programa de Lista de Tarefas Simples
+print("=== MINHA LISTA DE TAREFAS ===")
+
+# Lista para armazenar tarefas
+tarefas = []
+
+# Loop principal
+while True:
+    print("\nOpções:")
+    print("1. Adicionar tarefa")
+    print("2. Ver tarefas")
+    print("3. Sair")
+    
+    opcao = input("Escolha uma opção: ")
+    
+    if opcao == "1":
+        tarefa = input("Digite a tarefa: ")
+        tarefas.append(tarefa)
+        print("Tarefa adicionada!")
+        
+    elif opcao == "2":
+        print("\nSuas tarefas:")
+        if not tarefas:
+            print("Nenhuma tarefa ainda!")
+        else:
+            for i, tarefa in enumerate(tarefas, 1):
+                print(f"{i}. {tarefa}")
+                
+    elif opcao == "3":
+        print("Até logo!")
+        break
+    else:
+        print("Opção inválida!")
+
+print(f"Você tem {len(tarefas)} tarefas na lista!")</pre>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tips">
+                <h2>Dicas de Python</h2>
+                <div class="concept-card">
+                    <ul>
+                        <li><strong>Indentação é importante:</strong> Python usa espaços para definir blocos</li>
+                        <li><strong>Use nomes descritivos:</strong> variavel_nome em vez de x, y, z</li>
+                        <li><strong>Comentários:</strong> Use # para linhas únicas</li>
+                        <li><strong>Teste no interpretador:</strong> Python tem um modo interativo (digite python no terminal)</li>
+                        <li><strong>Leia erros:</strong> As mensagens de erro em Python são muito descritivas</li>
+                        <li><strong>Pratique:</strong> A melhor forma de aprender é programando!</li>
+                    </ul>
+                </div>
+            </section>
+
+            <div class="navigation-links">
+                <a href="javascript.html" class="btn btn-secondary">
+                    <i class="fas fa-arrow-left"></i> Voltar: JavaScript
+                </a>
+                <a href="index.html" class="btn btn-primary">
+                    Voltar ao Início <i class="fas fa-home"></i>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Aprenda Programação. Criado para ajudar iniciantes a aprender programação.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprenda JavaScript - Guia para Iniciantes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-code"></i>
+                    Aprenda Programação
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Início</a></li>
+                    <li><a href="html.html" class="nav-link">HTML</a></li>
+                    <li><a href="css.html" class="nav-link">CSS</a></li>
+                    <li><a href="javascript.html" class="nav-link">JavaScript</a></li>
+                    <li><a href="python.html" class="nav-link">Python</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="language-page">
+        <div class="container">
+            <div class="language-header">
+                <i class="fab fa-js" style="font-size: 4rem; color: #f7df1e; margin-bottom: 1rem;"></i>
+                <h1>JavaScript - Linguagem de Programação Web</h1>
+                <p>O JavaScript torna suas páginas web interativas e dinâmicas!</p>
+            </div>
+
+            <section class="intro">
+                <h2>O que é JavaScript?</h2>
+                <p>JavaScript é uma linguagem de programação que permite adicionar interatividade às suas páginas web. Se HTML é o esqueleto e CSS é a aparência, JavaScript é o cérebro que faz tudo funcionar!</p>
+                
+                <div class="code-example">
+                    <pre>// Este é um comentário JavaScript
+console.log("Olá, mundo!"); // Mostra mensagem no console
+
+// Variáveis
+let nome = "João";
+let idade = 25;
+
+// Função simples
+function cumprimentar(nome) {
+  return "Olá, " + nome + "!";
+}
+
+console.log(cumprimentar(nome)); // Olá, João!</pre>
+                </div>
+            </section>
+
+            <section class="concepts">
+                <h2>Conceitos Fundamentais</h2>
+                <div class="concepts-grid">
+                    <div class="concept-card">
+                        <h3><i class="fas fa-box"></i> Variáveis</h3>
+                        <p>Armazenam dados que podem ser usados e modificados durante o programa.</p>
+                        <div class="code-example">
+                            <pre>let nome = "Maria";
+const PI = 3.14;
+var idade = 30;
+
+// Tipos de dados
+let numero = 42;
+let texto = "JavaScript é legal!";
+let booleano = true;</pre>
+                        </div>
+                    </div>
+
+                    <div class="concept-card">
+                        <h3><i class="fas fa-code-branch"></i> Condicionais</h3>
+                        <p>Executam código baseado em condições (if, else if, else).</p>
+                        <div class="code-example">
+                            <pre>let idade = 18;
+
+if (idade >= 18) {
+  console.log("Você é maior de idade!");
+} else {
+  console.log("Você é menor de idade.");
+}</pre>
+                        </div>
+                    </div>
+
+                    <div class="concept-card">
+                        <h3><i class="fas fa-redo"></i> Loops</h3>
+                        <p>Repetem código várias vezes (for, while, do-while).</p>
+                        <div class="code-example">
+                            <pre>// Loop for
+for (let i = 0; i < 5; i++) {
+  console.log("Número: " + i);
+}
+
+// Loop while
+let contador = 0;
+while (contador < 3) {
+  console.log("Contador: " + contador);
+  contador++;
+}</pre>
+                        </div>
+                    </div>
+
+                    <div class="concept-card">
+                        <h3><i class="fas fa-cogs"></i> Funções</h3>
+                        <p>Blocos de código reutilizáveis que realizam tarefas específicas.</p>
+                        <div class="code-example">
+                            <pre>// Declaração de função
+function somar(a, b) {
+  return a + b;
+}
+
+// Arrow function
+const multiplicar = (a, b) => a * b;
+
+console.log(somar(5, 3)); // 8
+console.log(multiplicar(4, 2)); // 8</pre>
+                        </div>
+                    </div>
+
+                    <div class="concept-card">
+                        <h3><i class="fas fa-list"></i> Arrays</h3>
+                        <p>Listas ordenadas de elementos que podem ser acessados por índice.</p>
+                        <div class="code-example">
+                            <pre>let frutas = ["maçã", "banana", "laranja"];
+
+console.log(frutas[0]); // "maçã"
+console.log(frutas.length); // 3
+
+// Adicionar elemento
+frutas.push("manga");
+
+// Percorrer array
+frutas.forEach(fruta => {
+  console.log(fruta);
+});</pre>
+                        </div>
+                    </div>
+
+                    <div class="concept-card">
+                        <h3><i class="fas fa-mouse-pointer"></i> Eventos</h3>
+                        <p>Responde a ações do usuário como cliques, teclas pressionadas, etc.</p>
+                        <div class="code-example">
+                            <pre>// Evento de clique
+button.addEventListener('click', function() {
+  alert('Botão clicado!');
+});
+
+// Evento de tecla
+document.addEventListener('keydown', function(event) {
+  console.log('Tecla pressionada: ' + event.key);
+});</pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="dom">
+                <h2>Manipulando o DOM</h2>
+                <p>O DOM (Document Object Model) permite que o JavaScript acesse e modifique elementos HTML:</p>
+                
+                <div class="concepts-grid">
+                    <div class="concept-card">
+                        <h3>Selecionando Elementos</h3>
+                        <div class="code-example">
+                            <pre>// Por ID
+let titulo = document.getElementById('meu-titulo');
+
+// Por classe
+let botoes = document.getElementsByClassName('botao');
+
+// Por seletor CSS
+let paragrafo = document.querySelector('p');
+let divs = document.querySelectorAll('div');</pre>
+                        </div>
+                    </div>
+                    
+                    <div class="concept-card">
+                        <h3>Modificando Elementos</h3>
+                        <div class="code-example">
+                            <pre>// Mudar texto
+titulo.textContent = "Novo título";
+
+// Mudar HTML interno
+div.innerHTML = "<p>Novo conteúdo</p>";
+
+// Mudar estilo
+elemento.style.color = "red";
+elemento.style.fontSize = "20px";
+
+// Adicionar/remover classes
+elemento.classList.add("destaque");
+elemento.classList.remove("oculto");</pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="exercise">
+                <h2>Exercício Prático</h2>
+                <div class="concept-card">
+                    <h3>Crie uma Página Interativa</h3>
+                    <p>Vamos criar uma página que responda a cliques do usuário:</p>
+                    <ol>
+                        <li>Crie um arquivo HTML com um botão e um parágrafo</li>
+                        <li>Adicione um arquivo JavaScript com o código abaixo</li>
+                        <li>Teste clicando no botão!</li>
+                    </ol>
+                    
+                    <h4>HTML:</h4>
+                    <div class="code-example">
+                        <pre>&lt;button id="meu-botao"&gt;Clique em mim!&lt;/button&gt;
+&lt;p id="mensagem"&gt;Mensagem inicial&lt;/p&gt;
+
+&lt;script src="script.js"&gt;&lt;/script&gt;</pre>
+                    </div>
+                    
+                    <h4>JavaScript (script.js):</h4>
+                    <div class="code-example">
+                        <pre>// Seleciona elementos
+let botao = document.getElementById('meu-botao');
+let mensagem = document.getElementById('mensagem');
+let contador = 0;
+
+// Adiciona evento de clique
+botao.addEventListener('click', function() {
+  contador++;
+  mensagem.textContent = 'Botão clicado ' + contador + ' vezes!';
+  
+  // Muda cor aleatoriamente
+  let cores = ['red', 'blue', 'green', 'purple', 'orange'];
+  let corAleatoria = cores[Math.floor(Math.random() * cores.length)];
+  mensagem.style.color = corAleatoria;
+});</pre>
+                    </div>
+                </div>
+            </section>
+
+            <section class="interactive-demo">
+                <h2>Demonstração Interativa</h2>
+                <div class="concept-card">
+                    <h3>Teste Aqui Mesmo!</h3>
+                    <p>Clique no botão abaixo para ver JavaScript em ação:</p>
+                    
+                    <button id="demo-botao" class="btn btn-primary">Clique em mim!</button>
+                    <p id="demo-mensagem" style="margin-top: 1rem; font-size: 1.2rem;">Mensagem inicial</p>
+                    <p id="demo-contador" style="margin-top: 0.5rem; color: #666;">Contador: 0</p>
+                    
+                    <script>
+                        let demoBotao = document.getElementById('demo-botao');
+                        let demoMensagem = document.getElementById('demo-mensagem');
+                        let demoContador = document.getElementById('demo-contador');
+                        let contadorDemo = 0;
+                        
+                        demoBotao.addEventListener('click', function() {
+                            contadorDemo++;
+                            demoMensagem.textContent = 'Você clicou ' + contadorDemo + ' vezes!';
+                            demoContador.textContent = 'Contador: ' + contadorDemo;
+                            
+                            let cores = ['#2563eb', '#10b981', '#f59e0b', '#e11d48', '#8b5cf6'];
+                            let corAleatoria = cores[Math.floor(Math.random() * cores.length)];
+                            demoMensagem.style.color = corAleatoria;
+                        });
+                    </script>
+                </div>
+            </section>
+
+            <section class="tips">
+                <h2>Dicas de JavaScript</h2>
+                <div class="concept-card">
+                    <ul>
+                        <li><strong>Sempre declare variáveis:</strong> Use let ou const, evite var</li>
+                        <li><strong>Use console.log():</strong> Para debugar e entender o código</li>
+                        <li><strong>Teste incrementalmente:</strong> Vá testando partes do código</li>
+                        <li><strong>Entenda os erros:</strong> Leia as mensagens do console</li>
+                        <li><strong>Pratique:</strong> Crie pequenos projetos para aplicar o que aprendeu</li>
+                    </ul>
+                </div>
+            </section>
+
+            <div class="navigation-links">
+                <a href="css.html" class="btn btn-secondary">
+                    <i class="fas fa-arrow-left"></i> Voltar: CSS
+                </a>
+                <a href="python.html" class="btn btn-primary">
+                    Próximo: Python <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Aprenda Programação. Criado para ajudar iniciantes a aprender programação.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

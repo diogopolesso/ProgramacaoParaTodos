@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprenda HTML - Guia para Iniciantes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-code"></i>
+                    Aprenda Programação
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Início</a></li>
+                    <li><a href="html.html" class="nav-link">HTML</a></li>
+                    <li><a href="css.html" class="nav-link">CSS</a></li>
+                    <li><a href="javascript.html" class="nav-link">JavaScript</a></li>
+                    <li><a href="python.html" class="nav-link">Python</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="language-page">
+        <div class="container">
+            <div class="language-header">
+                <i class="fab fa-html5" style="font-size: 4rem; color: #e34c26; margin-bottom: 1rem;"></i>
+                <h1>HTML - HyperText Markup Language</h1>
+                <p>O HTML é a linguagem fundamental para criar páginas web. É como o esqueleto de um site!</p>
+            </div>
+
+            <section class="intro">
+                <h2>O que é HTML?</h2>
+                <p>HTML (HyperText Markup Language) é a linguagem padrão para criar páginas web. Imagine o HTML como os alicerces de uma casa - ele fornece a estrutura básica sobre a qual tudo o mais é construído.</p>
+                
+                <div class="code-example">
+                    <pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Minha Primeira Página&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Olá, Mundo!&lt;/h1&gt;
+    &lt;p&gt;Esta é minha primeira página web.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+                </div>
+            </section>
+
+            <section class="concepts">
+                <h2>Conceitos Fundamentais</h2>
+                <div class="concepts-grid">
+                    <div class="concept-card">
+                        <h3><i class="fas fa-tags"></i> Tags HTML</h3>
+                        <p>As tags são os blocos de construção do HTML. Elas são escritas entre sinais de menor e maior (&lt;&gt;).</p>
+                        <div class="code-example">
+                            <pre>&lt;h1&gt;Título Principal&lt;/h1&gt;
+&lt;p&gt;Este é um parágrafo.&lt;/p&gt;
+&lt;a href="#"&gt;Link&lt;/a&gt;</pre>
+                        </div>
+                    </div>
+
+                    <div class="concept-card">
+                        <h3><i class="fas fa-sitemap"></i> Estrutura Básica</h3>
+                        <p>Todo documento HTML tem uma estrutura básica com head e body.</p>
+                        <div class="code-example">
+                            <pre>&lt;head&gt;
+  &lt;title&gt;Título da Página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;!-- Conteúdo da página --&gt;
+&lt;/body&gt;</pre>
+                        </div>
+                    </div>
+
+                    <div class="concept-card">
+                        <h3><i class="fas fa-heading"></i> Títulos e Parágrafos</h3>
+                        <p>HTML oferece 6 níveis de títulos (h1 a h6) e parágrafos com a tag p.</p>
+                        <div class="code-example">
+                            <pre>&lt;h1&gt;Título Principal&lt;/h1&gt;
+&lt;h2&gt;Subtítulo&lt;/h2&gt;
+&lt;p&gt;Este é um parágrafo de texto.&lt;/p&gt;</pre>
+                        </div>
+                    </div>
+
+                    <div class="concept-card">
+                        <h3><i class="fas fa-link"></i> Links e Imagens</h3>
+                        <p>Links com &lt;a&gt; e imagens com &lt;img&gt; tornam as páginas interativas.</p>
+                        <div class="code-example">
+                            <pre>&lt;a href="https://exemplo.com"&gt;
+  Visite meu site
+&lt;/a&gt;
+&lt;img src="foto.jpg" alt="Descrição"&gt;</pre>
+                        </div>
+                    </div>
+
+                    <div class="concept-card">
+                        <h3><i class="fas fa-list"></i> Listas</h3>
+                        <p>Crie listas ordenadas (&lt;ol&gt;) e não ordenadas (&lt;ul&gt;).</p>
+                        <div class="code-example">
+                            <pre>&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;</pre>
+                        </div>
+                    </div>
+
+                    <div class="concept-card">
+                        <h3><i class="fas fa-table"></i> Tabelas</h3>
+                        <p>Organize dados em linhas e colunas com tabelas HTML.</p>
+                        <div class="code-example">
+                            <pre>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Nome&lt;/th&gt;
+    &lt;th&gt;Idade&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;João&lt;/td&gt;
+    &lt;td&gt;25&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="exercise">
+                <h2>Exercício Prático</h2>
+                <div class="concept-card">
+                    <h3>Crie sua Primeira Página HTML</h3>
+                    <p>Tente criar uma página HTML simples seguindo estes passos:</p>
+                    <ol>
+                        <li>Abra o Bloco de Notas (ou qualquer editor de texto)</li>
+                        <li>Copie o código básico da estrutura HTML</li>
+                        <li>Adicione um título &lt;h1&gt; com seu nome</li>
+                        <li>Adicione um parágrafo &lt;p&gt; com uma breve descrição sobre você</li>
+                        <li>Salve o arquivo com o nome <strong>index.html</strong></li>
+                        <li>Abra o arquivo no navegador</li>
+                    </ol>
+                    <div class="code-example">
+                        <pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Minha Página&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Seu Nome&lt;/h1&gt;
+    &lt;p&gt;Olá! Eu estou aprendendo HTML.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tips">
+                <h2>Dicas Importantes</h2>
+                <div class="concept-card">
+                    <ul>
+                        <li><strong>Sempre feche suas tags:</strong> &lt;p&gt;texto&lt;/p&gt;</li>
+                        <li><strong>Use letras minúsculas</strong> para as tags</li>
+                        <li><strong>Idente seu código</strong> para melhor leitura</li>
+                        <li><strong>Adicione comentários</strong> com &lt;!-- comentário --&gt;</li>
+                        <li><strong>Teste no navegador</strong> frequentemente</li>
+                    </ul>
+                </div>
+            </section>
+
+            <div class="navigation-links">
+                <a href="index.html" class="btn btn-secondary">
+                    <i class="fas fa-arrow-left"></i> Voltar ao Início
+                </a>
+                <a href="css.html" class="btn btn-primary">
+                    Próximo: Aprender CSS <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Aprenda Programação. Criado para ajudar iniciantes a aprender programação.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

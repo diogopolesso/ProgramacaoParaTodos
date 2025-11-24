@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprenda Programação - Guia para Iniciantes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <h1 class="logo">
+                    <i class="fas fa-code"></i>
+                    Aprenda Programação
+                </h1>
+                <ul class="nav-menu">
+                    <li><a href="#inicio" class="nav-link">Início</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#linguagens" class="nav-link">Linguagens</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h2 class="hero-title">Bem-vindo ao Mundo da Programação!</h2>
+                <p class="hero-subtitle">Aprenda a programar do zero com linguagens simples e didáticas</p>
+                <div class="hero-buttons">
+                    <a href="#linguagens" class="btn btn-primary">Começar Agora</a>
+                    <a href="#sobre" class="btn btn-secondary">Saiba Mais</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="about">
+            <div class="container">
+                <h2 class="section-title">Por Que Aprender Programação?</h2>
+                <div class="about-grid">
+                    <div class="about-card">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Desenvolva o Raciocínio Lógico</h3>
+                        <p>A programação ajuda a desenvolver o pensamento lógico e a resolver problemas de forma estruturada.</p>
+                    </div>
+                    <div class="about-card">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Amplie suas Oportunidades</h3>
+                        <p>A área de tecnologia oferece excelentes oportunidades de trabalho e crescimento profissional.</p>
+                    </div>
+                    <div class="about-card">
+                        <i class="fas fa-rocket"></i>
+                        <h3>Crie suas Próprias Soluções</h3>
+                        <p>Transforme suas ideias em realidade criando sites, aplicativos e programas úteis.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="linguagens" class="languages">
+            <div class="container">
+                <h2 class="section-title">Escolha sua Primeira Linguagem</h2>
+                <p class="section-subtitle">Comece com uma destas linguagens amigáveis para iniciantes</p>
+                
+                <div class="languages-grid">
+                    <div class="language-card">
+                        <div class="language-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <h3>HTML</h3>
+                        <p>A linguagem fundamental para criar páginas web. Perfeita para começar!</p>
+                        <div class="language-features">
+                            <span class="feature-tag">Fácil de aprender</span>
+                            <span class="feature-tag">Visual</span>
+                            <span class="feature-tag">Base da web</span>
+                        </div>
+                        <a href="html.html" class="btn btn-language">Aprender HTML</a>
+                    </div>
+
+                    <div class="language-card">
+                        <div class="language-icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <h3>CSS</h3>
+                        <p>Dê vida e estilo às suas páginas web com cores, layouts e animações.</p>
+                        <div class="language-features">
+                            <span class="feature-tag">Criativo</span>
+                            <span class="feature-tag">Visual</span>
+                            <span class="feature-tag">Estilização</span>
+                        </div>
+                        <a href="css.html" class="btn btn-language">Aprender CSS</a>
+                    </div>
+
+                    <div class="language-card">
+                        <div class="language-icon">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <h3>JavaScript</h3>
+                        <p>Torne suas páginas interativas e aprenda lógica de programação.</p>
+                        <div class="language-features">
+                            <span class="feature-tag">Interativo</span>
+                            <span class="feature-tag">Lógica</span>
+                            <span class="feature-tag">Versátil</span>
+                        </div>
+                        <a href="javascript.html" class="btn btn-language">Aprender JavaScript</a>
+                    </div>
+
+                    <div class="language-card">
+                        <div class="language-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <h3>Python</h3>
+                        <p>Linguagem poderosa e fácil de ler. Ideal para começar a programar.</p>
+                        <div class="language-features">
+                            <span class="feature-tag">Simples</span>
+                            <span class="feature-tag">Poderoso</span>
+                            <span class="feature-tag">Versátil</span>
+                        </div>
+                        <a href="python.html" class="btn btn-language">Aprender Python</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <h2>Pronto para Começar sua Jornada?</h2>
+                <p>Escolha uma linguagem e comece a aprender hoje mesmo!</p>
+                <a href="#linguagens" class="btn btn-primary">Escolher Linguagem</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Aprenda Programação. Criado para ajudar iniciantes a aprender programação.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

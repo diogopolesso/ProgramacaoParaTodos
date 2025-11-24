@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprenda CSS - Guia para Iniciantes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-code"></i>
+                    Aprenda Programação
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Início</a></li>
+                    <li><a href="html.html" class="nav-link">HTML</a></li>
+                    <li><a href="css.html" class="nav-link">CSS</a></li>
+                    <li><a href="javascript.html" class="nav-link">JavaScript</a></li>
+                    <li><a href="python.html" class="nav-link">Python</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="language-page">
+        <div class="container">
+            <div class="language-header">
+                <i class="fab fa-css3-alt" style="font-size: 4rem; color: #1572b6; margin-bottom: 1rem;"></i>
+                <h1>CSS - Cascading Style Sheets</h1>
+                <p>O CSS é a linguagem usada para dar estilo e beleza às suas páginas web!</p>
+            </div>
+
+            <section class="intro">
+                <h2>O que é CSS?</h2>
+                <p>CSS (Cascading Style Sheets) é a linguagem usada para descrever como os elementos HTML devem ser exibidos. Se o HTML é o esqueleto, o CSS é a roupa, o penteado e a maquiagem!</p>
+                
+                <div class="code-example">
+                    <pre>/* Este é um comentário CSS */
+p {
+  color: blue;
+  font-size: 16px;
+  text-align: center;
+}</pre>
+                </div>
+            </section>
+
+            <section class="concepts">
+                <h2>Conceitos Fundamentais</h2>
+                <div class="concepts-grid">
+                    <div class="concept-card">
+                        <h3><i class="fas fa-palette"></i> Cores</h3>
+                        <p>Defina cores para texto, fundos e bordas usando nomes, códigos hex ou RGB.</p>
+                        <div class="code-example">
+                            <pre>p {
+  color: red;           /* Nome da cor */
+  background: #ff0000;    /* Código hexadecimal */
+  border: 2px solid rgb(255, 0, 0); /* RGB */
+}</pre>
+                        </div>
+                    </div>
+
+                    <div class="concept-card">
+                        <h3><i class="fas fa-text-height"></i> Fontes e Texto</h3>
+                        <p>Controle o tamanho, estilo e família das fontes do seu texto.</p>
+                        <div class="code-example">
+                            <pre>h1 {
+  font-family: Arial, sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}</pre>
+                        </div>
+                    </div>
+
+                    <div class="concept-card">
+                        <h3><i class="fas fa-arrows-alt"></i> Espaçamento</h3>
+                        <p>Use margin (espaço externo) e padding (espaço interno) para organizar elementos.</p>
+                        <div class="code-example">
+                            <pre>div {
+  margin: 20px;      /* Espaço externo */
+  padding: 15px;     /* Espaço interno */
+  border: 1px solid black;
+}</pre>
+                        </div>
+                    </div>
+
+                    <div class="concept-card">
+                        <h3><i class="fas fa-th"></i> Layout com Display</h3>
+                        <p>Controla como os elementos são exibidos: block, inline, inline-block, flex, grid.</p>
+                        <div class="code-example">
+                            <pre>.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}</pre>
+                        </div>
+                    </div>
+
+                    <div class="concept-card">
+                        <h3><i class="fas fa-mouse-pointer"></i> Pseudo-classes</h3>
+                        <p>Estilize elementos em diferentes estados como hover, focus, active.</p>
+                        <div class="code-example">
+                            <pre>a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+button:active {
+  background: darkblue;
+}</pre>
+                        </div>
+                    </div>
+
+                    <div class="concept-card">
+                        <h3><i class="fas fa-mobile-alt"></i> Responsividade</h3>
+                        <p>Use media queries para adaptar seu site a diferentes tamanhos de tela.</p>
+                        <div class="code-example">
+                            <pre>@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+}</pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="selectors">
+                <h2>Seletores CSS</h2>
+                <p>Os seletores determinam quais elementos serão estilizados:</p>
+                
+                <div class="concepts-grid">
+                    <div class="concept-card">
+                        <h3>Seletor de Elemento</h3>
+                        <div class="code-example">
+                            <pre>p { color: blue; } /* Todas as tags p */</pre>
+                        </div>
+                    </div>
+                    
+                    <div class="concept-card">
+                        <h3>Seletor de Classe</h3>
+                        <div class="code-example">
+                            <pre>.destaque { background: yellow; }</pre>
+                        </div>
+                    </div>
+                    
+                    <div class="concept-card">
+                        <h3>Seletor de ID</h3>
+                        <div class="code-example">
+                            <pre>#cabecalho { font-size: 24px; }</pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="exercise">
+                <h2>Exercício Prático</h2>
+                <div class="concept-card">
+                    <h3>Estilize sua Página HTML</h3>
+                    <p>Agora que você já tem uma página HTML, vamos adicionar estilo:</p>
+                    <ol>
+                        <li>Crie um novo arquivo chamado <strong>estilo.css</strong></li>
+                        <li>Copie o código CSS abaixo</li>
+                        <li>Adicione &lt;link rel="stylesheet" href="estilo.css"&gt; no &lt;head&gt; do seu HTML</li>
+                        <li>Modifique as cores e tamanhos como quiser!</li>
+                    </ol>
+                    <div class="code-example">
+                        <pre>/* estilo.css */
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+p {
+  color: #666;
+  line-height: 1.6;
+}</pre>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tips">
+                <h2>Dicas de CSS</h2>
+                <div class="concept-card">
+                    <ul>
+                        <li><strong>Comece simples:</strong> Comece com cores e tamanhos básicos</li>
+                        <li><strong>Use classes:</strong> São mais flexíveis que IDs</li>
+                        <li><strong>Teste no navegador:</strong> Use as ferramentas de desenvolvedor (F12)</li>
+                        <li><strong>Organize seu CSS:</strong> Agrupe propriedades relacionadas</li>
+                        <li><strong>Use comentários:</strong> /* isto é um comentário */</li>
+                    </ul>
+                </div>
+            </section>
+
+            <div class="navigation-links">
+                <a href="html.html" class="btn btn-secondary">
+                    <i class="fas fa-arrow-left"></i> Voltar: HTML
+                </a>
+                <a href="javascript.html" class="btn btn-primary">
+                    Próximo: JavaScript <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Aprenda Programação. Criado para ajudar iniciantes a aprender programação.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
