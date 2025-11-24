@@ -78,7 +78,7 @@ Democratizar o acesso ao ensino de programação, oferecendo conteúdo gratuito,
 - Dicas importantes para iniciantes
 - Navegação entre linguagens
 
-## Tecnologias Utilizadas
+## Tecnologias
 
 - **HTML5** - Estrutura semântica
 - **CSS3** - Estilos modernos com variáveis CSS
