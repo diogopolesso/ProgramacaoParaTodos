@@ -1,12 +1,12 @@
-# Aprenda Programação - Site Educativo para Iniciantes
+# Programação para Todos- Site Educativo para Iniciantes
 
 ## Descrição do Projeto
 
-Este é um site educacional completo e amigável para pessoas que nunca tiveram contato com programação. O projeto foi desenvolvido com o objetivo de ensinar as principais linguagens de programação de forma simples, objetiva e progressiva, começando do zero.
+Este é um site educacional completo e amigável para pessoas que nunca tiveram contato com programação. O projeto foi desenvolvido com o objetivo de ensinar as principais linguagens de programação de forma simples, objetiva e progressiva.
 
 ## Objetivo
 
-Democratizar o acesso ao ensino de programação, oferecendo conteúdo gratuito, bem estruturado e fácil de entender para iniciantes absolutos na área de tecnologia.
+Democratizar o acesso ao ensino de programação, oferecendo conteúdo gratuito, fácil de entender para iniciantes na área de tecnologia.
 
 ## Estrutura do Site
 
@@ -61,15 +61,6 @@ Democratizar o acesso ao ensino de programação, oferecendo conteúdo gratuito,
 - Exemplo prático de programa de lista de tarefas
 - Aplicações reais de Python
 
-## Características de Design
-
-- **Design Responsivo** - Funciona em desktop, tablet e mobile
-- **Cores Atraentes** - Paleta moderna com cores das linguagens
-- **Tipografia Clara** - Fonte Inter para melhor legibilidade
-- **Ícones FontAwesome** - Elementos visuais consistentes
-- **Animações Suaves** - Transições e efeitos sutis
-- **Acessibilidade** - Estrutura semântica e navegação clara
-
 ## Conteúdo Educacional
 
 ### Metodologia
@@ -98,10 +89,10 @@ Democratizar o acesso ao ensino de programação, oferecendo conteúdo gratuito,
 ## Responsividade
 
 O site é totalmente responsivo e funciona em:
-- Desktop (1920px+)
-- Laptop (1024px+)
-- Tablet (768px+)
-- Mobile (320px+)
+- Desktop
+- Laptop
+- Tablet
+- Mobile
 
 ## Destaques do Projeto
 
@@ -112,15 +103,7 @@ O site é totalmente responsivo e funciona em:
 5. **Design Atraente** - Interface moderna que atrai iniciantes
 6. **Acessível** - Funciona em qualquer navegador moderno
 
-## Como Usar
-
-1. **Navegue pela página inicial** para entender o que é programação
-2. **Escolha uma linguagem** para começar (recomendamos HTML)
-3. **Leia o conteúdo** e acompanhe os exemplos
-4. **Faça os exercícios** práticos propostos
-5. **Avance para a próxima linguagem** quando se sentir confortável
-
-## Próximos Passos Recomendados
+## Passos Recomendados
 
 ### Para o Estudante:
 - Pratique os exercícios propostos em cada linguagem
@@ -128,21 +111,13 @@ O site é totalmente responsivo e funciona em:
 - Explore mais recursos online após completar o básico
 - Junte-se a comunidades de programadores iniciantes
 
-### Para Desenvolvimento Futuro do Site:
+### Desenvolvimento Futuro do Site:
 - Adicionar mais exercícios interativos
 - Criar um sistema de progresso para os estudantes
 - Incluir quizzes de revisão
 - Adicionar mais linguagens (Java, C++, etc.)
 - Criar uma seção de projetos práticos
 - Implementar modo escuro
-
-## Personalização
-
-O site pode ser facilmente personalizado alterando:
-- Cores no arquivo `css/style.css` (variáveis CSS)
-- Fontes no HTML (Google Fonts)
-- Conteúdo educacional nas páginas de linguagem
-- Ícones (FontAwesome)
 
 ## Licença
 
