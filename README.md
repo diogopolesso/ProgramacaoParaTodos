@@ -86,15 +86,6 @@ O site é totalmente responsivo e funciona em:
 - Tablet
 - Mobile
 
-## Destaques do Projeto
-
-1. **Amigável para Iniciantes** - Linguagem simples e exemplos claros
-2. **Progressão Lógica** - HTML → CSS → JavaScript → Python
-3. **Exercícios Práticos** - Cada linguagem tem um exercício para fazer
-4. **Código Funcional** - Todos os exemplos podem ser testados
-5. **Design Atraente** - Interface moderna que atrai iniciantes
-6. **Acessível** - Funciona em qualquer navegador moderno
-
 ## Passos Recomendados
 
 ### Para o Estudante:
