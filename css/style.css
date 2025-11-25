@@ -85,6 +85,10 @@ body {
     color: white;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
